@@ -1,1 +1,1 @@
-# worker-service
+# service-worker
