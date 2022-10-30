@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <h1>Service Worker Example</h1>
+  </header>
+  <nav>
+    <ul>
+      <li class="current"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Home</h2>
+    <p>
+      The idea for this is that we want these pages to be available even if users connection drops.
+      OK polilla!
+    </p>
+    <p>
+      Remember that sw_cached_pages.js is executed in a thread independent of main thread.
+      This is why we see <code>Lifecycle 2</code>, <code>Lifecycle 1</code>, logs first and then
+      <code>Lifecycle 1</code>
+      log
+    </p>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
